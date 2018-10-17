@@ -50,7 +50,9 @@ public class UserCreateController {
 
     @RequestMapping(value = "/user_create.html", method = RequestMethod.POST)
     public String createUser(@ModelAttribute("form") @Valid UserCreateForm form, BindingResult result) {
-        LOGGER.debug("Received request to create {}, with result={}", form, result);
+        
+        
+        LOGGER.debug("KKK   Received request to create {}, with result={}", form, result);
         if (result.hasErrors()) {
             return "user_create";
         }
