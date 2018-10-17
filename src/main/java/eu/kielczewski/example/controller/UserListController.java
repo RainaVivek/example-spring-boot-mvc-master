@@ -27,6 +27,8 @@ public class UserListController {
         ModelMap model = new ModelMap();
         model.addAttribute("users", userService.getList());
         return new ModelAndView("user_list", model);
+        
+        
     }
 
 }
